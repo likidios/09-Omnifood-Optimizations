@@ -1,6 +1,4 @@
-console.log("Hello world!");
-
-const myName = "Jonas Schmedtmann";
+const myName = "Likidios";
 const h1 = document.querySelector(".heading-primary");
 console.log(myName);
 console.log(h1);
@@ -48,6 +46,9 @@ allLinks.forEach(function (link) {
     if (href !== "#" && href.startsWith("#")) {
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({ behavior: "smooth" });
+    }
+    if (href !== "#" && href.startsWith("http")) {
+      window.location.replace(href);
     }
 
     // Close mobile naviagtion
