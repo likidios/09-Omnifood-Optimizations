@@ -48,7 +48,7 @@ allLinks.forEach(function (link) {
       sectionEl.scrollIntoView({ behavior: "smooth" });
     }
     if (href !== "#" && href.startsWith("http")) {
-      window.location.replace(href);
+      window.location.href = href;
     }
 
     // Close mobile naviagtion
